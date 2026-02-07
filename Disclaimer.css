@@ -1,0 +1,14 @@
+
+.disclaimer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  padding: 6px 10px;
+  background-color: #fbe923;
+  color: #555;
+  border-top: 1px solid #ddd;
+  z-index: 1000;
+}

@@ -1,0 +1,245 @@
+/* ==================== Base ==================== */
+.planner-root {
+  padding: 30px;
+  background-color: #f7f9fc;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  color: #1e293b;
+}
+
+.planner-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.planner-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.planner-header p {
+  font-size: 1rem;
+  color: #64748b;
+}
+
+/* ==================== Controls ==================== */
+.controls-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.control-item {
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.control-item label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+  color: #334155;
+}
+
+.control-item input[type="range"] {
+  width: 100%;
+  accent-color: #3b82f6;
+  margin-bottom: 5px;
+}
+
+.control-item .budget-val {
+  display: block;
+  text-align: right;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+/* ==================== Stats ==================== */
+.main-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.stat-box {
+  flex: 1 1 180px;
+  max-width: 220px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s;
+}
+
+.stat-box:hover {
+  transform: translateY(-2px);
+}
+
+.stat-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #0f172a;
+}
+
+.stat-box p {
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.highlight {
+  background: #3b82f6;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ==================== Recommended Schedule ==================== */
+.schedule-dropdown {
+  padding: 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+.dropdown-header {
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapsed-text {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* Compact table for schedule */
+.schedule-list-compact {
+  display: table;
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: separate;
+  border-spacing: 0 6px;
+}
+
+.schedule-row {
+  display: table-row;
+  background: #f9fafb;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.schedule-row:hover {
+  transform: translateY(-1px);
+}
+
+.schedule-row span {
+  display: table-cell;
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.schedule-row.header {
+  font-weight: 600;
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.schedule-row.high span {
+  color: #ef4444;
+}
+
+.schedule-row.medium span {
+  color: #f59e0b;
+}
+
+.schedule-row.low span {
+  color: #22c55e;
+}
+
+/* ==================== Appliance Allocation ==================== */
+.appliance-card {
+  padding: 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.appliance-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+.appliance-table th {
+  text-align: left;
+  padding: 8px;
+  color: #475569;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.appliance-table td {
+  padding: 6px 8px;
+  font-size: 0.9rem;
+  color: #1e293b;
+  vertical-align: middle;
+}
+
+.bar-bg {
+  background: #e2e8f0;
+  border-radius: 10px;
+  height: 16px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.bar-fill {
+  height: 100%;
+  background: #3b82f6;
+  transition: width 0.5s ease-in-out;
+  border-radius: 10px 0 0 10px;
+}
+
+.bar-text {
+  font-size: 0.8rem;
+  color: #334155;
+}
+
+/* ==================== Responsive ==================== */
+@media (max-width: 900px) {
+  .controls-grid, .main-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-box, .control-item {
+    max-width: 100%;
+  }
+
+  .schedule-list-compact span, .appliance-table td, .appliance-table th {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  .bar-bg {
+    width: 100px;
+  }
+}
