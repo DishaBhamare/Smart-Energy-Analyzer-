@@ -1,0 +1,20 @@
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 15px;
+}
+
+/* Colored accent bars on top of stats */
+.stat-box {
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.stat-box.usage { border-top: 4px solid #28a745; }
+.stat-box.cost { border-top: 4px solid #007bff; }
+.stat-box.co2 { border-top: 4px solid #20c997; }
+.stat-box.alert { border-top: 4px solid #dc3545; background-color: #fff5f5; }
+
+.stat-value { font-size: 22px; font-weight: 800; }

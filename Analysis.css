@@ -1,0 +1,48 @@
+.alert-section {
+  background-color: #fffdf0; /* Light yellow background */
+  border: 1px solid #ffecb5;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.alert-item {
+  color: #856404;
+  font-size: 13.5px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.rec-section {
+  background-color: #f0fff4; /* Light green background */
+  border: 1px solid #c6f6d5;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.rec-item {
+  color: #22543d;
+  font-size: 13.5px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+/* Add this to handle the "Zero/Empty" state gracefully */
+.widget-card {
+  transition: all 0.4s ease;
+}
+
+/* This matches the logic we added in JS */
+[style*="opacity: 0.5"] {
+  filter: grayscale(0.5); /* Makes the colors look muted until data arrives */
+  cursor: not-allowed;
+}
+
+.stat-box {
+  border: 1px solid #e2e8f0;
+  padding: 15px;
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+
+.stat-box:hover {
+  transform: scale(1.02); /* Slight pop effect on hover */
+}

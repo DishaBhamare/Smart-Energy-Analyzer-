@@ -1,0 +1,117 @@
+.planning-container {
+  padding: 20px;
+  background-color: #f4f7ff;
+  min-height: 100vh;
+}
+
+.page-title {
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+.glass-card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.active-btn {
+  background: #60a5fa;
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 8px;
+  width: 300px;
+  font-weight: bold;
+}
+
+.inactive-btn {
+  background: #93c5fd;
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.main-input {
+  width: 250px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.appliance-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.app-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 12px;
+  width: 180px;
+  border: 1px solid #edf2f7;
+}
+
+.app-item input {
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.pill-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.usage-pill {
+  background: #eef6ff;
+  padding: 15px 40px;
+  border-radius: 12px;
+  color: #1e293b;
+  font-weight: 500;
+  flex: 1;
+}
+
+.summary-card {
+  background: linear-gradient(to bottom, #ffffff, #f0f4ff);
+}
+
+.summary-value {
+  font-size: 28px;
+  margin: 10px 0;
+  color: #0f172a;
+}
+
+.progress-bar {
+  height: 12px;
+  background: #e2e8f0;
+  border-radius: 10px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #3b82f6;
+  transition: width 0.5s ease-in-out;
+}
